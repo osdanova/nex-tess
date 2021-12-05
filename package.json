@@ -1,7 +1,10 @@
 {
+  "homepage": "https://osdanova.github.io/nex-tess",
   "name": "nex-tess",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -14,6 +17,7 @@
   },
   "devDependencies": {
     "eslint": "8.4.0",
-    "eslint-config-next": "12.0.7"
+    "eslint-config-next": "12.0.7",
+    "gh-pages": "^3.2.3"
   }
 }
